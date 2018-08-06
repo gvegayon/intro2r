@@ -64,6 +64,8 @@ In R, if you want to:
 
 *   Know about the Regular Expressions? `??"Regular Expressions"`, or `help.search("Regular Expressions")`
 
+*   See a full list of the functions and help files available in the package `boot`: `help(package="boot")`.
+
 *   Look at more in deph information about the Matrix package? `vignette(package="Matrix")`
 
 ----
@@ -112,4 +114,16 @@ In R, if you want to:
 </figure>
 </div>
 
+# Questions
+
+1.  Using the `stats` package, How can you estimate a **generalized linear model** in R?
+
+2.  What is the command to **transpose** a matrix in R? What about the command for inverting a matrix?
+
+3.  Looking at CRAN task Views, what R packages are available for convex optimization? What about stochastic optimization?
+
+4.  Create a list of R packages that provide wrappers for working with Slurm.
+
+5.  What does return the function for fitting nonlinear least squares in the `stats` package?
+ 
 # References
