@@ -1,5 +1,5 @@
 ---
-title: 'Intro to R: A Workshop for HPCC Users (R language fundamentals)<br><img src="fig/trojan-rlogo.svg" width="250px">'
+title: 'Intro to R (part 2):<br>R language fundamentals<br><img src="fig/trojan-rlogo.svg" width="250px">'
 author: George G. Vega Yon<br>University of Southern California<br>Department of Preventive Medicine
 date: July 7th, 2018
 bibliography: intro2r.bib
@@ -355,6 +355,65 @@ hist(Z, breaks=100)
     ```
 
     
+# Functions
+
+*   Understanding functions, and functional programming can be very useful for your day-to-day work with R (and any programming language).
+
+*   Functions can be created in a single line, or span multiple lines of code.
+
+*   Usually, functions are structured as follow:
     
+    ```r
+    name_of_the_function <- function(
+      argument1,    # First argument, required value
+      argument2 = 1 # Second argument, has a default (so is optional)
+    ) {
     
+      [your neat R code here]
+      
+      return(answer)
+    
+    }
+    
+    ```
+
+---
+
+*   This is the very basic that we can write in R
+        
+    ```{r}
+    # A function that does nothing
+    my_lame_function <- function() {}
+    my_lame_function()
+    ```
+
+---
+
+*   Here is a more complicated function
+    
+    ```{r}
+    calc_sum <- function(A, B) {
+      A + B
+    }
+    
+    calc_sum(1, 5)
+    ```
+
+---
+
+*   We can use recursions too!
+
+    ```{r}
+    # An inefficient implementation of the Fibonacci number
+    fib <- function(i) {
+      
+      if (i <= 2)
+        return(1)
+      
+      fib(i - 2) + fib(i - 1)
+      
+    }
+    
+    c(fib(1), fib(2), fib(4), fib(5), fib(6), fib(7), fib(8))
+    ```
 

@@ -1,5 +1,5 @@
 ---
-title: 'Intro to R: A Workshop for HPCC Users (preface)<br><img src="fig/trojan-rlogo.svg" width="250px">'
+title: 'Intro to R (part 1):<br>Preface<br><img src="fig/trojan-rlogo.svg" width="250px">'
 author: George G. Vega Yon<br>University of Southern California<br>Department of Preventive Medicine
 date: July 7th, 2018
 bibliography: intro2r.bib
